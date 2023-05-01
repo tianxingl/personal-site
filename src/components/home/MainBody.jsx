@@ -20,11 +20,7 @@ const MainBody = React.forwardRef(
           <h1 ref={ref} className="display-1">
             {title}
           </h1>
-          <Typist>
-            <div className="lead typist">
-              {message}
-            </div>
-          </Typist>
+          <div>{message}</div>
           <div className="p-5">
             {icons.map((icon, index) => (
               <a
@@ -34,7 +30,7 @@ const MainBody = React.forwardRef(
                 href={icon.url}
                 aria-label={`My ${icon.image.split("-")[1]}`}
               >
-                <i className={`fab ${icon.image}  fa-3x socialicons`} />
+                <i className={`${icon.class} ${icon.image} fa-3x socialicons`} />
               </a>
             ))}
           </div>
