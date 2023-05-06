@@ -132,19 +132,21 @@ const getInTouch = {
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      // companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Software Engineer II',
+      img: require('../assets/img/klaviyo.png'),
+      imgWidth: 200,
+      imgHeight: 200,
+      date: 'November 2021 – Present',
     },
-    {
-      role: 'Front-End Developer',
-      // companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
+    // {
+    //   role: 'Front-End Developer',
+    //   // companylogo: require('../assets/img/boeing.png'),
+    //   date: 'May 2017 – May 2018',
+    // },
   ]
 }
 
