@@ -47,7 +47,15 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  message: "I have worked at mid-sized tech companies with a mindset for personal growth and a bias toward actions. I have worn many hats as an software engineer-- designing and implementing user-facing features, conducting customer research, creating and reviewing RFCs, maintaining cloud infrastructures, migrating databases, maintaining CI/CD pipelines, organizing performance and scale testing, developing ML platform tools, and training ML models.",
+  message: `
+  I have worked at mid-sized tech companies with a mindset for personal growth and a bias toward actions. 
+  I have built systems from scratch as well as migrated and maintained long-running products. 
+  I have worn many hats as a software engineer, and my work included frontend, backend, NLP, and ML platform. 
+  Some of my industry highlights include-- creating multi-factor authentication feature, building automated 
+  report system with SMS notifications, designing conversational AI in web chat, conducting customer research, 
+  creating and reviewing technical RFCs, maintaining cloud infrastructures, migrating databases, maintaining CI/CD pipelines, 
+  organizing performance and scale testing, developing ML platform tools, training ML models, and conducting engineer interviews.
+  `,
   resume: require("../editable-stuff/Tianxing_Liu_Resume.pdf"),
 };
 
@@ -129,15 +137,28 @@ const experiences = {
   data: [
     {
       role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
+      // companylogo: require('../assets/img/dell.png'),
       date: 'June 2018 – Present',
     },
     {
       role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
+      // companylogo: require('../assets/img/boeing.png'),
       date: 'May 2017 – May 2018',
     },
   ]
+}
+
+const education = {
+  show: true,
+  heading: "Education",
+  data: {
+    name: "University of California, San Diego",
+    description: "Bachelor of Science, Computer Science",
+    subDescription: "Cum Laude",
+    img: require('../assets/img/ucsd_seal.png'),
+    imgWidth: 200,
+    imgHeight: 200,
+  }
 }
 
 // Blog SECTION
@@ -145,4 +166,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, education };
